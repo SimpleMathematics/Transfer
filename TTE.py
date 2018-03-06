@@ -22,4 +22,3 @@ with open('SKUtranstempWF.html', 'rb+') as file:
 			for word in line:
 				if word == 'storeid':
 					file.writes(word.replace('storeid', 'CH'))
-					print(file.writes())
