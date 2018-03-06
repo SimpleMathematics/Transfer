@@ -1,6 +1,5 @@
 
 import os
-import time
 
 os.chdir('C:\\Users\\SH\\Documents\\WC')
 
@@ -18,6 +17,8 @@ with open('SKUtranstempWF.html', 'rb+') as file:
 	chunk_size = 6699
 	file_chunk = file.read(chunk_size)
 	while len(file_chunk) > 0:
+		file.write(file_chunk)
+		file_chunk = file.read(chunk_size)
 		for line in file:
 			for word in line:
 				if word == 'storeid':
