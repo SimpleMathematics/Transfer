@@ -1,6 +1,5 @@
 
 import os
-import fileinput
 import time
 
 os.chdir('C:\\Users\\SH\\Documents\\WC')
